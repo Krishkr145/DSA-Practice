@@ -1,3 +1,6 @@
+//Time Complexity:O(n)
+//Space Complexity:O(1)
+
 #include<iostream>
 #include<climits>
 using namespace std;
@@ -10,12 +13,11 @@ int main(){
             max=arr[i];
 
         }
-    }
-    for(int i=0;i<5;i++){
-        if(arr[i]>smax && arr[i]!=max){
+        else if(arr[i]>smax && arr[i]!=max){
             smax=arr[i];
         }
     }
+    
     cout<<"The second largest element in the array is:"<<smax;
 
 }
